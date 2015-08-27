@@ -1,0 +1,491 @@
+@import "susy";
+@import "breakpoint";
+@import "compass/reset";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500italic);
+
+// initial setup:
+$susy: (
+	global-box-sizing: border-box
+);
+
+@include border-box-sizing;
+
+$desktop: (
+	columns: 12,
+	gutters: 3/8, 
+);
+
+$mobile: (
+	columns: 6,
+	gutters: 3/8, 
+);
+
+// What variables look like
+// $logo-height: 150;
+// height: ($logo-height + 50) + px;
+// margin-top: -($logo-height / 2) + px;
+
+$font-primary-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+
+// color scheme
+
+$light-blue: #a4ffff;
+$medium-blue: #2ba9e9;
+$dark-blue: #009ddc;
+
+$light-green: #caff8f;
+$medium-green: #7ac143;
+$dark-green: #6fb13d;
+
+$light-gray: #efefef;
+$medium-gray: #707176;
+$dark-gray: #515151;
+
+$yellow: #efb111;
+$light-yellow: #fff260;
+
+$purple: #a500db;
+
+$black: #000;
+$white: #fff;
+
+$text: #323232;
+$header: #131313;
+
+// clearfix placeholder selector 
+// not complied to CSS unless used with @extend %clearfix;
+
+%clearfix {
+
+  &:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+}
+
+// base styles
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body{
+	background-color: $light-gray;
+	font-family: $font-primary-sans-serif;
+	font-size: 16px;
+	line-height: 2;
+	text-align: center;
+}
+
+h1{
+	font-size: 30px; 
+	margin-bottom: 40px;
+}
+
+h2{
+	font-size: 24px; 
+	margin-bottom: 20px;
+}
+
+p{
+	font-weight: normal; 
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold; 
+}
+
+strong{
+	font-weight: bold; 
+}
+
+em{
+	font-style: italic;
+	font-weight: bold; 
+}
+
+hr{
+	display: block;
+	border: 2px solid $yellow;
+	margin: 20px auto;
+	width: 15%;  
+}
+
+.animate{
+	-webkit-transition: -webkit-transform 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+	-moz-transition: -moz-transform 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+	-o-transition: -o-transform 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+	transition: transform 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+}
+
+.container{
+	@include container(100%);
+	@extend %clearfix;
+	max-width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.nav{
+	position: fixed;
+	padding: 20px;
+	width: 100%;
+}
+
+#main-nav{ 
+	
+	li{
+		list-style: none;
+
+		a{
+			display: block;
+		}
+	}
+}
+
+.mobile-menu{
+	background: url(../images/mobile-menu.svg) no-repeat right center; 
+	width: 36px;
+	height: 20px;
+	float: right;  
+}
+
+.block{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.node{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.node-worldrelief{
+	background: url(../images/worldrelief.jpg) no-repeat center center; 
+	background-size: cover;
+	color: $white;
+}
+
+.logo{
+	background: url(../images/logo.svg) no-repeat center center; 
+	background-size: cover;
+	margin: 0 auto;
+}
+
+.node-vulnerable{
+	background-color: $white;
+	color: $header;
+}
+
+.node-help{
+	background-color: $medium-green;
+	color: $white;
+}
+
+.node-help-categories{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.node-stand{
+	background-color: $white;
+	color: $header;
+}
+
+.node-join{
+	background-color: $dark-gray;
+	color: $white;
+}
+
+.join-image{
+	background: url(../images/join.jpg) no-repeat center center; 
+	background-size: cover;
+}
+
+.node-pray{
+	background-color: $medium-blue;
+	color: $white;
+}
+
+.pray-image{
+	background: url(../images/pray.jpg) no-repeat center center; 
+	background-size: cover;
+}
+
+.node-give{
+	background-color: $yellow;
+	color: $white;
+}
+
+.give-image{
+	background: url(../images/give.jpg) no-repeat center center; 
+	background-size: cover;
+}
+
+.node-advocate{
+	background-color: $medium-green;
+	color: $white;
+}
+
+.advocate-image{
+	background: url(../images/advocate.jpg) no-repeat center center; 
+	background-size: cover;
+}
+
+.node-signup{
+	background-color: $white;
+	color: $header;
+}
+
+#sub-form{
+	width: 85%;
+	max-width: 560px;
+	margin: 0 auto; 
+	margin-bottom: 30px; 
+}
+
+#email{
+	display: block;
+	background-color: $light-gray;
+	border: none;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin: 0;
+	padding: 20px;
+	color: $header;
+	width: 66%;
+	float: left;
+}
+
+#submit{
+	display: block;
+	background-color: $medium-blue;
+	border: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin: 0;
+	padding: 0;
+	color: $white;
+	width: 33%;
+	float: left;
+}
+
+.footer{
+	background-color: $light-gray;
+	color: $text;
+	width: 100%; 
+}
+
+.social{
+
+	ul{
+		width: 100%;
+		
+		li{
+			width: 24.5%;
+			margin: 0;
+			list-style: none;
+			float: left;
+			
+			a{
+				display: block;	
+			}
+		}
+	}
+}
+
+.social li a[href*="facebook.com"]{
+	background: url(../images/facebook.svg) no-repeat center center; 
+	background-size: cover;
+}
+
+.social li a[href*="twitter.com"]{
+	background: url(../images/twitter.svg) no-repeat center center; 
+	background-size: cover;
+}
+
+.social li a[href*="instagram.com"]{
+	background: url(../images/instagram.svg) no-repeat center center; 
+	background-size: cover;
+}
+
+.social li a[href*="linkedin.com"]{
+	background: url(../images/linkedin.svg) no-repeat center center; 
+	background-size: cover;
+}
+
+.copyright{
+	width: 100%;
+}
+
+.button{
+	display: block;
+	padding: 13px 0;
+	border-radius: 36px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.reference{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.fill-blue{
+	background-color: $medium-blue; 
+	color: $white; 
+}
+
+.nofill-yellow{
+	border: 2px solid $yellow; 
+	color: $header; 
+}
+
+.fill-white{
+	background-color: $white; 
+	color: $header; 
+}
+
+.nofill-light-blue{
+	border: 2px solid $light-blue;
+	color: $white; 
+}
+
+.nofill-light-yellow{
+	border: 2px solid $light-yellow;
+	color: $white;
+}
+
+.nofill-light-green{
+	border: 2px solid $light-green;
+	color: $white;
+}
+
+//layouts:
+
+//mobile
+
+@include layout($mobile);
+
+.mobile-menu{
+	display: block;	
+}
+
+#main-nav{
+	display: block;
+	position: relative;
+	background-color: $white;
+	padding: 20px; 
+	width: 200px;
+	-webkit-transform: translate(0, 0); 
+	-moz-transform: translate(0, 0); 
+	-ms-transform: translate(0, 0); 
+	-o-transform: translate(0, 0); 
+	transform: translate(0, 0); 
+	
+	li{
+		width: 100%;
+		color: $header;
+		
+		a{
+			padding: 20px;
+			color: $header;
+		}
+	}
+}
+
+.node{
+	padding: 50px 20px;
+}
+
+.logo{
+	margin-top: 35px;
+	margin-bottom: 20px;
+	width: 160px;
+	height: 70px;
+}
+
+.node-help-section{
+	position: static;
+	width: 100%;
+	background: none;
+	margin: 10px 0px; 
+}
+
+.node-help-content{
+	width: 35%;
+	margin: 0 auto;
+}
+
+.node-help-icon{
+	width: 32px;
+	height: 32px; 
+	background: url(../images/cart.svg) no-repeat center center; 
+	background-size: cover;
+}
+
+.node-join, .node-pray, .node-give, .node-advocate{
+	padding: 0;
+}
+
+.half-image-left, .half-image-right{
+	height: 175px;
+	width: 100%;
+	margin: 0;
+	float: none; 
+}
+
+.half-content-left, .half-content-right{
+	width: 100%;
+	margin: 0;
+	padding: 30px 20px;
+	float: none; 
+}
+
+.footer{
+	padding: 50px 15px;
+}
+
+.social{
+	width: 40%;
+	margin: 0 auto 30px auto;
+
+	ul{
+		
+		li{
+			
+			a{
+				height: 24px;
+				width: 24px;
+			}
+		}
+	}
+}
+
+.button{
+	width: 180px;
+}
+
+//desktop
+
+@include breakpoint(676px){
+
+	@include layout($desktop);
+	
+	.button{
+		width: 220px;
+	}
+}

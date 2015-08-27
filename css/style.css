@@ -1,0 +1,539 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500italic);
+/* line 5, ../../../../.rvm/gems/ruby-2.1.2@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.1.2@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.1.2@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.1.2@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.1.2@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.1.2@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.1.2@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.1.2@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.1.2@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../../../../.rvm/gems/ruby-2.1.2@global/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 60, ../sass/style.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 69, ../sass/style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 74, ../sass/style.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 78, ../sass/style.scss */
+body {
+  background-color: #efefef;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+}
+
+/* line 86, ../sass/style.scss */
+h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/* line 91, ../sass/style.scss */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* line 96, ../sass/style.scss */
+p {
+  font-weight: 400;
+}
+
+/* line 100, ../sass/style.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 104, ../sass/style.scss */
+em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* line 109, ../sass/style.scss */
+hr {
+  display: block;
+  border: 2px solid #efb111;
+  margin: 20px auto;
+  width: 15%;
+}
+
+/* line 116, ../sass/style.scss */
+.animate {
+  -webkit-transition: -webkit-transform 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+  -moz-transition: -moz-transform 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+  -o-transition: -o-transform 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+  transition: transform 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+}
+
+/* line 123, ../sass/style.scss */
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 12, ../../../../.rvm/gems/ruby-2.1.2@global/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 131, ../sass/style.scss */
+.nav {
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+}
+
+/* line 139, ../sass/style.scss */
+#main-nav li {
+  list-style: none;
+}
+/* line 142, ../sass/style.scss */
+#main-nav li a {
+  display: block;
+}
+
+/* line 148, ../sass/style.scss */
+.mobile-menu {
+  background: url(../images/mobile-menu.svg) no-repeat right center;
+  width: 36px;
+  height: 20px;
+  float: right;
+}
+
+/* line 155, ../sass/style.scss */
+.block {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 161, ../sass/style.scss */
+.node {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 167, ../sass/style.scss */
+.node-worldrelief {
+  background: url(../images/worldrelief.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+/* line 173, ../sass/style.scss */
+.logo {
+  background: url(../images/logo.svg) no-repeat center center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+/* line 179, ../sass/style.scss */
+.node-vulnerable {
+  background-color: #fff;
+  color: #131313;
+}
+
+/* line 184, ../sass/style.scss */
+.node-help {
+  background-color: #7ac143;
+  color: #fff;
+}
+
+/* line 189, ../sass/style.scss */
+.node-help-categories {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 195, ../sass/style.scss */
+.node-stand {
+  background-color: #fff;
+  color: #131313;
+}
+
+/* line 200, ../sass/style.scss */
+.node-join {
+  background-color: #515151;
+  color: #fff;
+}
+
+/* line 205, ../sass/style.scss */
+.join-image {
+  background: url(../images/join.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 210, ../sass/style.scss */
+.node-pray {
+  background-color: #2ba9e9;
+  color: #fff;
+}
+
+/* line 215, ../sass/style.scss */
+.pray-image {
+  background: url(../images/pray.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 220, ../sass/style.scss */
+.node-give {
+  background-color: #efb111;
+  color: #fff;
+}
+
+/* line 225, ../sass/style.scss */
+.give-image {
+  background: url(../images/give.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 230, ../sass/style.scss */
+.node-advocate {
+  background-color: #efb111;
+  color: #fff;
+}
+
+/* line 235, ../sass/style.scss */
+.advocate-image {
+  background: url(../images/advocate.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 240, ../sass/style.scss */
+.node-signup {
+  background-color: #fff;
+  color: #131313;
+}
+
+/* line 245, ../sass/style.scss */
+#sub-form {
+  width: 85%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* line 251, ../sass/style.scss */
+#email {
+  display: block;
+  background-color: #707176;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin: 0;
+  padding: 20px;
+  color: #323232;
+  width: 66%;
+  float: left;
+}
+
+/* line 264, ../sass/style.scss */
+#submit {
+  display: block;
+  background-color: #2ba9e9;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  width: 33%;
+  float: left;
+}
+
+/* line 277, ../sass/style.scss */
+.footer {
+  background-color: #efefef;
+  color: #323232;
+  width: 100%;
+}
+
+/* line 285, ../sass/style.scss */
+.social ul {
+  width: 100%;
+}
+/* line 288, ../sass/style.scss */
+.social ul li {
+  width: 24.5%;
+  margin: 0;
+  list-style: none;
+  float: left;
+}
+/* line 294, ../sass/style.scss */
+.social ul li a {
+  display: block;
+}
+
+/* line 301, ../sass/style.scss */
+.social li a[href*="facebook.com"] {
+  background: url(../images/facebook.svg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 306, ../sass/style.scss */
+.social li a[href*="twitter.com"] {
+  background: url(../images/twitter.svg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 311, ../sass/style.scss */
+.social li a[href*="instagram.com"] {
+  background: url(../images/instagram.svg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 316, ../sass/style.scss */
+.social li a[href*="linkedin.com"] {
+  background: url(../images/linkedin.svg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 321, ../sass/style.scss */
+.copyright {
+  width: 100%;
+}
+
+/* line 325, ../sass/style.scss */
+.button {
+  display: block;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+/* line 331, ../sass/style.scss */
+.button-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700px;
+}
+
+/* line 337, ../sass/style.scss */
+.fill-blue {
+  background-color: #2ba9e9;
+  color: #fff;
+}
+
+/* line 342, ../sass/style.scss */
+.nofill-yellow {
+  border: 2px solid #efb111;
+  color: #131313;
+}
+
+/* line 347, ../sass/style.scss */
+.fill-white {
+  background-color: #fff;
+  color: #131313;
+}
+
+/* line 352, ../sass/style.scss */
+.nofill-light-blue {
+  border: 2px solid #a4ffff;
+  color: #fff;
+}
+
+/* line 357, ../sass/style.scss */
+.nofill-light-yellow {
+  border: 2px solid #fff260;
+  color: #fff;
+}
+
+/* line 362, ../sass/style.scss */
+.nofill-light-green {
+  border: 2px solid #caff8f;
+  color: #fff;
+}
+
+/* line 373, ../sass/style.scss */
+.mobile-menu {
+  display: block;
+}
+
+/* line 377, ../sass/style.scss */
+#main-nav {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  width: 200px;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+/* line 389, ../sass/style.scss */
+#main-nav li {
+  width: 100%;
+  color: #131313;
+}
+/* line 393, ../sass/style.scss */
+#main-nav li a {
+  padding: 20px;
+}
+
+/* line 399, ../sass/style.scss */
+.node {
+  padding: 50px 20px;
+}
+
+/* line 403, ../sass/style.scss */
+.logo {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  width: 160px;
+  height: 70px;
+}
+
+/* line 410, ../sass/style.scss */
+.node-help-section {
+  position: static;
+  width: 100%;
+  background: none;
+  margin: 10px 0px;
+}
+
+/* line 417, ../sass/style.scss */
+.node-help-content {
+  width: 35%;
+  margin: 0 auto;
+}
+
+/* line 422, ../sass/style.scss */
+.node-help-icon {
+  width: 32px;
+  height: 32px;
+  background: url(../images/cart.svg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 429, ../sass/style.scss */
+.node-join, .node-pray, .node-give, .node-advocate {
+  padding: 0;
+}
+
+/* line 433, ../sass/style.scss */
+.half-image-left, .half-image-right {
+  height: 175px;
+  width: 100%;
+  margin: 0;
+  float: none;
+}
+
+/* line 440, ../sass/style.scss */
+.half-content-left, .half-content-right {
+  width: 100%;
+  margin: 0;
+  padding: 30px 20px;
+  float: none;
+}
+
+/* line 447, ../sass/style.scss */
+.footer {
+  padding: 50px 15px;
+}
+
+/* line 451, ../sass/style.scss */
+.social {
+  width: 40%;
+  margin: 0 auto 30px auto;
+}
+/* line 459, ../sass/style.scss */
+.social ul li a {
+  height: 24px;
+  width: 24px;
+}
+
+/* line 467, ../sass/style.scss */
+.button {
+  width: 180px;
+}
+
+@media (min-width: 676px) {
+  /* line 477, ../sass/style.scss */
+  .button {
+    width: 220px;
+  }
+}
