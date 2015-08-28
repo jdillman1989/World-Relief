@@ -135,8 +135,7 @@ hr{
 
 .nav{
 	position: fixed;
-	padding: 20px;
-	width: 100%;
+	padding: 10px;
 }
 
 #main-nav{ 
@@ -146,6 +145,7 @@ hr{
 
 		a{
 			display: block;
+			width: 100%;
 		}
 	}
 }
@@ -154,6 +154,8 @@ hr{
 	background: url(../images/mobile-menu.svg) no-repeat right center; 
 	width: 36px;
 	height: 20px;
+	position: fixed;
+	margin: 20px;
 	float: right;  
 }
 
@@ -197,6 +199,10 @@ hr{
 	padding: 0;
 }
 
+.node-help-content{
+	line-height: 1;
+}
+
 .node-stand{
 	background-color: $white;
 	color: $header;
@@ -208,7 +214,7 @@ hr{
 }
 
 .join-image{
-	background: url(../images/join.jpg) no-repeat center center; 
+	background: $black url(../images/join.jpg) no-repeat center center; 
 	background-size: cover;
 }
 
@@ -218,7 +224,7 @@ hr{
 }
 
 .pray-image{
-	background: url(../images/pray.jpg) no-repeat center center; 
+	background: $black url(../images/pray.jpg) no-repeat center center; 
 	background-size: cover;
 }
 
@@ -228,7 +234,7 @@ hr{
 }
 
 .give-image{
-	background: url(../images/give.jpg) no-repeat center center; 
+	background: $black url(../images/give.jpg) no-repeat center center; 
 	background-size: cover;
 }
 
@@ -238,7 +244,7 @@ hr{
 }
 
 .advocate-image{
-	background: url(../images/advocate.jpg) no-repeat center center; 
+	background: $black url(../images/advocate.jpg) no-repeat center center; 
 	background-size: cover;
 }
 
@@ -277,6 +283,7 @@ hr{
 	padding: 0;
 	color: $white;
 	width: 33%;
+	height: 53px;
 	float: left;
 }
 
@@ -332,7 +339,7 @@ hr{
 	display: block;
 	padding: 13px 0;
 	border-radius: 36px;
-	margin: 0 auto;
+	margin: 20px auto 0 auto;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: bold;
@@ -390,6 +397,7 @@ hr{
 	background-color: $white;
 	padding: 20px; 
 	width: 200px;
+	float: right;
 	-webkit-transform: translate(0, 0); 
 	-moz-transform: translate(0, 0); 
 	-ms-transform: translate(0, 0); 
@@ -398,9 +406,9 @@ hr{
 	
 	li{
 		width: 100%;
-		color: $header;
 		
 		a{
+			width: 100%;
 			padding: 20px;
 			color: $header;
 		}
@@ -418,11 +426,46 @@ hr{
 	height: 70px;
 }
 
-.node-help-section{
+.node-help{
+	padding: 50px 20px;
+	margin-bottom: 0;
+	
+	h2, p{
+		padding: 0;
+	}
+}
+
+.node-help-categories{
 	position: static;
 	width: 100%;
-	background: none;
+	background: transparent;
+	margin: 0; 
+}
+
+.node-help-section{
 	margin: 10px 0px; 
+	width: 100%;
+	float: none; 
+}
+
+.health-section{
+	background: transparent;
+}
+
+.disaster-section{
+	background: transparent;
+}
+
+.refugee-section{
+	background: transparent;
+}
+
+.economic-section{
+	background: transparent;
+}
+
+.peace-section{
+	background: transparent;
 }
 
 .node-help-content{
@@ -433,12 +476,41 @@ hr{
 .node-help-icon{
 	width: 32px;
 	height: 32px; 
+	margin: 0 auto;
+}
+
+.health-icon{
 	background: url(../images/cart.svg) no-repeat center center; 
 	background-size: cover;
 }
 
+.disaster-icon{
+	background: url(../images/cart.svg) no-repeat center center; 
+	background-size: cover;
+}
+
+.refugee-icon{
+	background: url(../images/cart.svg) no-repeat center center; 
+	background-size: cover;
+}
+
+.economic-icon{
+	background: url(../images/cart.svg) no-repeat center center; 
+	background-size: cover;
+}
+
+.peace-icon{
+	background: url(../images/cart.svg) no-repeat center center; 
+	background-size: cover;
+}
+
+.node-stand{
+	padding: 50px 20px;
+}
+
 .node-join, .node-pray, .node-give, .node-advocate{
 	padding: 0;
+	height: auto;
 }
 
 .half-image-left, .half-image-right{
@@ -484,6 +556,188 @@ hr{
 @include breakpoint(676px){
 
 	@include layout($desktop);
+	
+	.nav{
+		width: 100%; 
+	}
+	
+	.mobile-menu{
+		display: none;	
+	}
+
+	#main-nav{
+		background-color: transparent;
+		padding: 0; 
+		width: 80%;
+		float: right;
+		-webkit-transform: translate(0, 0); 
+		-moz-transform: translate(0, 0); 
+		-ms-transform: translate(0, 0); 
+		-o-transform: translate(0, 0); 
+		transform: translate(0, 0); 
+		
+		li{
+			width: 14%;
+			float: left;
+			
+			a{
+				padding: 20px 0;
+				color: $white;
+			}
+		}
+	}
+
+	.node{
+		padding: 80px 80px;
+	}
+
+	.logo{
+		margin-top: 70px;
+		margin-bottom: 60px;
+		width: 370px;
+		height: 160px;
+	}
+
+	.node-help{
+		padding: 80px 0 0 0;
+		margin-bottom: -210px; 
+		
+		h2, p{
+			padding: 0 80px;
+		}
+	}
+
+	.node-help-categories{
+		width: 100%;
+		height: 420px;
+		background: transparent;
+		margin: 40px 0 0 0; 
+	}
+
+	.node-help-section{
+		margin: 0px 1%; 
+		width: 17.9%;
+		height: 100%; 
+		float: left; 
+	}
+
+	.health-section{
+		background: $black url(../images/health.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.disaster-section{
+		background: $black url(../images/disaster.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.refugee-section{
+		background: $black url(../images/refugee.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.economic-section{
+		background: $black url(../images/economic.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.peace-section{
+		background: $black url(../images/peace.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.node-help-content{
+		width: 130px;
+		margin: 340px auto 0 auto;
+	}
+
+	.node-help-icon{
+		width: 32px;
+		height: 32px; 
+		margin: 0 auto;
+	}
+
+	.health-icon{
+		background: $white url(../images/health.svg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.disaster-icon{
+		background: $white url(../images/disaster.svg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.refugee-icon{
+		background: $white url(../images/refugee.svg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.economic-icon{
+		background: $white url(../images/economic.svg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.peace-icon{
+		background: $white url(../images/peace.svg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.node-stand{
+		padding: 290px 80px 80px 80px;
+	}
+
+	.node-join, .node-pray, .node-give, .node-advocate{
+		padding: 0;
+		height: 380px;
+	}
+
+	.half-image-left{
+		height: 100%;
+		width: 50%;
+		margin: 0;
+		float: left; 
+	}
+
+	.half-image-right{
+		height: 100%;
+		width: 50%;
+		margin: 0;
+		float: right; 
+	}
+
+	.half-content-left{
+		width: 50%;
+		margin: 0;
+		padding: 8% 6% 0 6%;
+		float: left; 
+	}
+
+	.half-content-right{
+		width: 50%;
+		margin: 0;
+		padding: 6% 6% 0 6%;
+		float: right;
+	}
+
+	.footer{
+		padding: 80px 80px;
+	}
+
+	.social{
+		width: 20%;
+		margin: 0 auto 30px auto;
+
+		ul{
+			
+			li{
+				
+				a{
+					height: 32px;
+					width: 32px;
+				}
+			}
+		}
+	}
 	
 	.button{
 		width: 220px;
