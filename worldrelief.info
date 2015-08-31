@@ -1,0 +1,14 @@
+name = World-Relief
+description = Drupal theme for World Relief
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/style.css
+scripts[] = js/worldrelief.js
+
+regions[header] = Header
+regions[content] = Content
+regions[footer] = Footer
+
+features[] = main_menu
