@@ -135,7 +135,7 @@ em {
 /* line 114, ../sass/style.scss */
 hr {
   display: block;
-  border: 2px solid #efb111;
+  border: 1px solid #efb111;
   margin: 20px auto;
   width: 15%;
 }
