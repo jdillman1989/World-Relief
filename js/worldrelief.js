@@ -10,7 +10,10 @@ jQuery(document).ready(function() {
 
 	if (jQuery(window).width() < 676 ) {
 
-		navContainer.css({"transform":"translate(" + navContainer.outerWidth() + "px, 0px)"});
+		navContainer.css({
+			"transform":"translate(" + navContainer.outerWidth() + "px, 0px)",
+			"-webkit-transform":"translate(" + navContainer.outerWidth() + "px, 0px)"
+		});
 	}
 
 	jQuery(window).resize(function() {
