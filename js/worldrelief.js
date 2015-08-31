@@ -29,6 +29,8 @@ jQuery(document).ready(function() {
 
 			navContainer.css({"transform":"translate(0px, 0px)"});
 
+			console.log( ".nav x-coord: 0");
+
 			mobileIconSecond.css({"width":"48px"});
 
 			mobileIconThird.css({"width":"48px"});
@@ -39,6 +41,8 @@ jQuery(document).ready(function() {
 			navContainer.addClass("position");
 
 			navContainer.css({"transform":"translate(" + navContainer.outerWidth() + "px, 0px)"});
+
+			console.log( ".nav x-coord: " + navContainer.outerWidth() );
 
 			mobileIconSecond.css({"width":"38px"});
 
