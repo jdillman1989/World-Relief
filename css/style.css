@@ -796,56 +796,60 @@ hr {
     width: 130px;
     margin: 340px auto 0 auto;
   }
+  /* line 707, ../sass/style.scss */
+  .node-help-content p {
+    padding: 15px 0;
+  }
 
-  /* line 708, ../sass/style.scss */
+  /* line 712, ../sass/style.scss */
   .node-help-icon {
     width: 32px;
     height: 32px;
     margin: 0 auto;
   }
 
-  /* line 714, ../sass/style.scss */
+  /* line 718, ../sass/style.scss */
   .health-icon {
     background: #fff url(../images/health.svg) no-repeat center center;
     background-size: cover;
   }
 
-  /* line 719, ../sass/style.scss */
+  /* line 723, ../sass/style.scss */
   .disaster-icon {
     background: #fff url(../images/disaster.svg) no-repeat center center;
     background-size: cover;
   }
 
-  /* line 724, ../sass/style.scss */
+  /* line 728, ../sass/style.scss */
   .refugee-icon {
     background: #fff url(../images/refugee.svg) no-repeat center center;
     background-size: cover;
   }
 
-  /* line 729, ../sass/style.scss */
+  /* line 733, ../sass/style.scss */
   .economic-icon {
     background: #fff url(../images/economic.svg) no-repeat center center;
     background-size: cover;
   }
 
-  /* line 734, ../sass/style.scss */
+  /* line 738, ../sass/style.scss */
   .peace-icon {
     background: #fff url(../images/peace.svg) no-repeat center center;
     background-size: cover;
   }
 
-  /* line 739, ../sass/style.scss */
+  /* line 743, ../sass/style.scss */
   .node-stand {
     padding: 290px 80px 80px 80px;
   }
 
-  /* line 743, ../sass/style.scss */
+  /* line 747, ../sass/style.scss */
   .node-join, .node-pray, .node-give, .node-advocate {
     padding: 0;
     height: 380px;
   }
 
-  /* line 748, ../sass/style.scss */
+  /* line 752, ../sass/style.scss */
   .half-image-left {
     height: 100%;
     width: 50%;
@@ -853,7 +857,7 @@ hr {
     float: left;
   }
 
-  /* line 755, ../sass/style.scss */
+  /* line 759, ../sass/style.scss */
   .half-image-right {
     height: 100%;
     width: 50%;
@@ -861,7 +865,7 @@ hr {
     float: right;
   }
 
-  /* line 762, ../sass/style.scss */
+  /* line 766, ../sass/style.scss */
   .half-content-left {
     width: 50%;
     margin: 0;
@@ -869,7 +873,7 @@ hr {
     float: left;
   }
 
-  /* line 769, ../sass/style.scss */
+  /* line 773, ../sass/style.scss */
   .half-content-right {
     width: 50%;
     margin: 0;
@@ -877,23 +881,23 @@ hr {
     float: right;
   }
 
-  /* line 776, ../sass/style.scss */
+  /* line 780, ../sass/style.scss */
   .footer {
     padding: 80px 80px;
   }
 
-  /* line 780, ../sass/style.scss */
+  /* line 784, ../sass/style.scss */
   .social {
     width: 20%;
     margin: 0 auto 30px auto;
   }
-  /* line 788, ../sass/style.scss */
+  /* line 792, ../sass/style.scss */
   .social ul li a {
     height: 32px;
     width: 32px;
   }
 
-  /* line 796, ../sass/style.scss */
+  /* line 800, ../sass/style.scss */
   .button {
     width: 220px;
   }
