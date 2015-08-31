@@ -17,7 +17,10 @@ jQuery(document).ready(function() {
 
 		if (jQuery(window).width() > 676 ) {
 
-			navContainer.css({"transform":"translate(0px, 0px)"});
+			navContainer.css({
+				"transform":"translate(0px, 0px)",
+				"-webkit-transform":"translate(0px, 0px)"
+			});
 		}
 	});
 
