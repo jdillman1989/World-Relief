@@ -1,8 +1,8 @@
 <section class="block">
 
-	<div class="node node-<?php print $node->nid; ?>">
+	<div class="wr-node node-<?php print $node->nid; ?>">
 
-		<?php if ($node->nid==1): ?>
+		<?php if ($node->nid==32): ?>
 			<div class="logo"></div>
 		<?php endif; ?>
 

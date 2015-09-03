@@ -225,14 +225,14 @@ hr {
 }
 
 /* line 192, ../sass/style.scss */
-.node {
+.wr-node {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
 /* line 199, ../sass/style.scss */
-.node-worldrelief {
+.node-32 {
   background: url(../images/worldrelief.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
@@ -246,13 +246,13 @@ hr {
 }
 
 /* line 212, ../sass/style.scss */
-.node-vulnerable {
+.node-33 {
   background-color: #fff;
   color: #131313;
 }
 
 /* line 218, ../sass/style.scss */
-.node-help {
+.node-34 {
   background-color: #7ac143;
   color: #fff;
 }
@@ -270,13 +270,13 @@ hr {
 }
 
 /* line 234, ../sass/style.scss */
-.node-stand {
+.node-37 {
   background-color: #fff;
   color: #131313;
 }
 
 /* line 240, ../sass/style.scss */
-.node-join {
+.node-38 {
   background-color: #515151;
   color: #fff;
 }
@@ -288,7 +288,7 @@ hr {
 }
 
 /* line 251, ../sass/style.scss */
-.node-pray {
+.node-39 {
   background-color: #2ba9e9;
   color: #fff;
 }
@@ -300,7 +300,7 @@ hr {
 }
 
 /* line 262, ../sass/style.scss */
-.node-give {
+.node-40 {
   background-color: #efb111;
   color: #fff;
 }
@@ -312,7 +312,7 @@ hr {
 }
 
 /* line 273, ../sass/style.scss */
-.node-advocate {
+.node-41 {
   background-color: #7ac143;
   color: #fff;
 }
@@ -530,7 +530,7 @@ hr {
 }
 
 /* line 477, ../sass/style.scss */
-.node {
+.wr-node {
   padding: 50px 20px;
 }
 
@@ -543,12 +543,12 @@ hr {
 }
 
 /* line 489, ../sass/style.scss */
-.node-help {
+.node-34 {
   padding: 50px 20px;
   margin-bottom: 0;
 }
 /* line 493, ../sass/style.scss */
-.node-help h2, .node-help p {
+.node-34 h2, .node-34 p {
   padding: 0;
 }
 
@@ -636,12 +636,12 @@ hr {
 }
 
 /* line 568, ../sass/style.scss */
-.node-stand {
+.node-37 {
   padding: 50px 20px;
 }
 
 /* line 573, ../sass/style.scss */
-.node-join, .node-pray, .node-give, .node-advocate {
+.node-38, .node-39, .node-40, .node-41 {
   padding: 0;
   height: auto;
 }
@@ -718,7 +718,7 @@ hr {
   }
 
   /* line 652, ../sass/style.scss */
-  .node {
+  .wr-node {
     padding: 80px 80px;
   }
 
@@ -731,12 +731,12 @@ hr {
   }
 
   /* line 664, ../sass/style.scss */
-  .node-help {
+  .node-34 {
     padding: 80px 0 0 0;
     margin-bottom: -210px;
   }
   /* line 668, ../sass/style.scss */
-  .node-help h2, .node-help p {
+  .node-34 h2, .node-34 p {
     padding: 0 80px;
   }
 
@@ -834,12 +834,12 @@ hr {
   }
 
   /* line 753, ../sass/style.scss */
-  .node-stand {
+  .node-37 {
     padding: 290px 80px 80px 80px;
   }
 
   /* line 758, ../sass/style.scss */
-  .node-join, .node-pray, .node-give, .node-advocate {
+  .node-38, .node-39, .node-40, .node-41 {
     padding: 0;
     height: 380px;
   }

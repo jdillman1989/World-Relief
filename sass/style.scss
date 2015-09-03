@@ -189,14 +189,14 @@ hr{
 	padding: 0;
 }
 
-.node{
+.wr-node{
 	width: 100%;
 	margin: 0;
 	padding: 0;
 }
 
 // world relief
-.node-worldrelief{
+.node-32{
 	background: url(../images/worldrelief.jpg) no-repeat center center; 
 	background-size: cover;
 	color: $white;
@@ -209,13 +209,13 @@ hr{
 }
 
 // vulnerable
-.node-vulnerable{
+.node-33{
 	background-color: $white;
 	color: $header;
 }
 
 // help
-.node-help{
+.node-34{
 	background-color: $medium-green;
 	color: $white;
 }
@@ -231,13 +231,13 @@ hr{
 }
 
 // stand
-.node-stand{
+.node-37{
 	background-color: $white;
 	color: $header;
 }
 
 // join
-.node-join{
+.node-38{
 	background-color: $dark-gray;
 	color: $white;
 }
@@ -248,7 +248,7 @@ hr{
 }
 
 // pray
-.node-pray{
+.node-39{
 	background-color: $medium-blue;
 	color: $white;
 }
@@ -259,7 +259,7 @@ hr{
 }
 
 // give
-.node-give{
+.node-40{
 	background-color: $yellow;
 	color: $white;
 }
@@ -270,7 +270,7 @@ hr{
 }
 
 // advocate
-.node-advocate{
+.node-41{
 	background-color: $medium-green;
 	color: $white;
 }
@@ -474,7 +474,7 @@ hr{
 	}
 }
 
-.node{
+.wr-node{
 	padding: 50px 20px;
 }
 
@@ -486,7 +486,7 @@ hr{
 }
 
 // help
-.node-help{
+.node-34{
 	padding: 50px 20px;
 	margin-bottom: 0;
 	
@@ -565,12 +565,12 @@ hr{
 }
 
 // stand
-.node-stand{
+.node-37{
 	padding: 50px 20px;
 }
 
 // join, pray, give, advocate
-.node-join, .node-pray, .node-give, .node-advocate{
+.node-38, .node-39, .node-40, .node-41{
 	padding: 0;
 	height: auto;
 }
@@ -649,7 +649,7 @@ hr{
 		}
 	}
 
-	.node{
+	.wr-node{
 		padding: 80px 80px;
 	}
 
@@ -661,7 +661,7 @@ hr{
 	}
 
 	// help
-	.node-help{
+	.node-34{
 		padding: 80px 0 0 0;
 		margin-bottom: -210px; 
 		
@@ -750,12 +750,12 @@ hr{
 	}
 
 	// stand
-	.node-stand{
+	.node-37{
 		padding: 290px 80px 80px 80px;
 	}
 
 	// join, pray, give, advocate
-	.node-join, .node-pray, .node-give, .node-advocate{
+	.node-38, .node-39, .node-40, .node-41{
 		padding: 0;
 		height: 380px;
 	}
