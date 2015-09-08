@@ -25,7 +25,7 @@ $mobile: (
 // height: ($logo-height + 50) + px;
 // margin-top: -($logo-height / 2) + px;
 
-$font-primary-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+$font-primary-sans-serif: "proxima-nova", "Roboto", Helvetica, Arial, sans-serif;
 
 // color scheme
 
@@ -545,27 +545,27 @@ hr{
 }
 
 .health-icon{
-	background: url(../images/cart.svg) no-repeat center center; 
+	background: url(../images/health.svg) no-repeat center center; 
 	background-size: cover;
 }
 
 .disaster-icon{
-	background: url(../images/cart.svg) no-repeat center center; 
+	background: url(../images/disaster.svg) no-repeat center center; 
 	background-size: cover;
 }
 
 .refugee-icon{
-	background: url(../images/cart.svg) no-repeat center center; 
+	background: url(../images/refugee.svg) no-repeat center center; 
 	background-size: cover;
 }
 
 .economic-icon{
-	background: url(../images/cart.svg) no-repeat center center; 
+	background: url(../images/economic.svg) no-repeat center center; 
 	background-size: cover;
 }
 
 .peace-icon{
-	background: url(../images/cart.svg) no-repeat center center; 
+	background: url(../images/peace.svg) no-repeat center center; 
 	background-size: cover;
 }
 
@@ -730,27 +730,27 @@ hr{
 	}
 
 	.health-icon{
-		background: $white url(../images/health.svg) no-repeat center center; 
+		background: url(../images/health.svg) no-repeat center center; 
 		background-size: cover;
 	}
 
 	.disaster-icon{
-		background: $white url(../images/disaster.svg) no-repeat center center; 
+		background: url(../images/disaster.svg) no-repeat center center; 
 		background-size: cover;
 	}
 
 	.refugee-icon{
-		background: $white url(../images/refugee.svg) no-repeat center center; 
+		background: url(../images/refugee.svg) no-repeat center center; 
 		background-size: cover;
 	}
 
 	.economic-icon{
-		background: $white url(../images/economic.svg) no-repeat center center; 
+		background: url(../images/economic.svg) no-repeat center center; 
 		background-size: cover;
 	}
 
 	.peace-icon{
-		background: $white url(../images/peace.svg) no-repeat center center; 
+		background: url(../images/peace.svg) no-repeat center center; 
 		background-size: cover;
 	}
 

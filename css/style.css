@@ -92,7 +92,7 @@ html {
 /* line 78, ../sass/style.scss */
 body {
   background-color: #efefef;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Roboto", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 2;
   text-align: center;
@@ -612,31 +612,31 @@ hr {
 
 /* line 547, ../sass/style.scss */
 .health-icon {
-  background: url(../images/cart.svg) no-repeat center center;
+  background: url(../images/health.svg) no-repeat center center;
   background-size: cover;
 }
 
 /* line 552, ../sass/style.scss */
 .disaster-icon {
-  background: url(../images/cart.svg) no-repeat center center;
+  background: url(../images/disaster.svg) no-repeat center center;
   background-size: cover;
 }
 
 /* line 557, ../sass/style.scss */
 .refugee-icon {
-  background: url(../images/cart.svg) no-repeat center center;
+  background: url(../images/refugee.svg) no-repeat center center;
   background-size: cover;
 }
 
 /* line 562, ../sass/style.scss */
 .economic-icon {
-  background: url(../images/cart.svg) no-repeat center center;
+  background: url(../images/economic.svg) no-repeat center center;
   background-size: cover;
 }
 
 /* line 567, ../sass/style.scss */
 .peace-icon {
-  background: url(../images/cart.svg) no-repeat center center;
+  background: url(../images/peace.svg) no-repeat center center;
   background-size: cover;
 }
 
@@ -810,31 +810,31 @@ hr {
 
   /* line 732, ../sass/style.scss */
   .health-icon {
-    background: #fff url(../images/health.svg) no-repeat center center;
+    background: url(../images/health.svg) no-repeat center center;
     background-size: cover;
   }
 
   /* line 737, ../sass/style.scss */
   .disaster-icon {
-    background: #fff url(../images/disaster.svg) no-repeat center center;
+    background: url(../images/disaster.svg) no-repeat center center;
     background-size: cover;
   }
 
   /* line 742, ../sass/style.scss */
   .refugee-icon {
-    background: #fff url(../images/refugee.svg) no-repeat center center;
+    background: url(../images/refugee.svg) no-repeat center center;
     background-size: cover;
   }
 
   /* line 747, ../sass/style.scss */
   .economic-icon {
-    background: #fff url(../images/economic.svg) no-repeat center center;
+    background: url(../images/economic.svg) no-repeat center center;
     background-size: cover;
   }
 
   /* line 752, ../sass/style.scss */
   .peace-icon {
-    background: #fff url(../images/peace.svg) no-repeat center center;
+    background: url(../images/peace.svg) no-repeat center center;
     background-size: cover;
   }
 
