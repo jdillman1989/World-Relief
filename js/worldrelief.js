@@ -74,7 +74,7 @@ jQuery(document).ready(function() {
 			} 
 			else {
 
-				navContainer.css({"background-color":"transparent"});
+				navContainer.css({"background-color":"rgba(43,169,233,0.3)"});
 			}
 		});
 	}

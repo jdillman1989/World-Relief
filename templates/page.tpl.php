@@ -19,10 +19,6 @@
 		<div class="mobile-icon-third mobile-icon animate"></div>
 	</div>
 
-	<?php if ($tabs): ?>
-		<?php print render($tabs);?>
-	<?php endif; ?>
-
 	<?php print render($page["content"]); ?>
 
 	<div class="footer">
