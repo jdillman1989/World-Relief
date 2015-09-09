@@ -327,12 +327,14 @@ hr{
 }
 
 .footer{
+	@extend %clearfix;
 	background-color: $light-gray;
 	color: $text;
 	width: 100%; 
 }
 
 .social{
+	@extend %clearfix;
 
 	ul{
 		width: 100%;
@@ -371,6 +373,7 @@ hr{
 }
 
 .copyright{
+	@extend %clearfix;
 	width: 100%;
 }
 

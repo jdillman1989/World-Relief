@@ -52,4 +52,8 @@
 			<p>7 East Baltimore Street, Baltimore MD 21202 | 443.451.1900</p>
 		</div>
 	</div>
+
+	<?php if ($tabs): ?>
+		<?php print render($tabs);?>
+	<?php endif; ?>
 </div>
