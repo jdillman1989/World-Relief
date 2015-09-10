@@ -3,6 +3,7 @@
 	<?php
 
 	hide($content['field_background_image']);
+	hide($content['field_background_color']);
 
 	if ($node->field_background_image){
 
@@ -16,11 +17,38 @@
 
 	}
 
+	elseif ($node->field_background_color) {
+
+		switch ($node->field_background_color) {
+		    case "Green":
+		        $bgcolor = "#7ac143";
+		        break;
+		    case "Gray":
+		        $bgcolor = "#515151";
+		        break;
+		    case "Blue":
+		        $bgcolor = "#2ba9e9";
+		        break;
+		    case "Yellow":
+		        $bgcolor = "#efb111";
+		        break;
+		    default:
+		        $bgcolor = "#2ba9e9";
+		}
+
+	?>
+
+	<div class="wr-node node-<?php print $node->nid; ?>" style="background: <?php echo $bgcolor; ?>; color:#ffffff;">
+
+	<?php
+
+	}
+
 	else{
 
 	?>
 
-	<div class="wr-node node-<?php print $node->nid; ?>" style="color:#131313;">
+	<div class="wr-node node-<?php print $node->nid; ?>" style="background: #ffffff; color:#131313;">
 
 	<?php
 
