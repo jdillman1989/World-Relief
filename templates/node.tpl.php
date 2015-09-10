@@ -2,9 +2,11 @@
 
 	<?php
 
+	hide($content['field_background_image']);
+
 	if ($node->field_background_image){
 
-		$url = file_create_url($node->field_background_image[$node->language][0]['uri']);
+		$url = file_create_url($node->field_background_image[LANGUAGE_NONE][0]['uri']);
 
 	?>
 
