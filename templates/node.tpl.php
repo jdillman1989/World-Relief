@@ -19,7 +19,7 @@
 
 	elseif ($node->field_background_color) {
 
-		switch ($node->field_background_color) {
+		switch ($node->field_background_color['und'][0]['value']) {
 		    case "Green":
 		        $bgcolor = "#7ac143";
 		        break;
@@ -63,3 +63,7 @@
 	<?php print render($content); ?>
 	</div>
 </section>
+
+
+
+
