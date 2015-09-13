@@ -93,4 +93,30 @@ jQuery(document).ready(function() {
 			}
 		});
 	}
+
+	// responsive iframes
+
+	var iframe = jQuery("iframe");
+	var content = jQuery(".wr-node");
+
+	iframe.attr( "width", content.width() );
+
+	jQuery(window).resize(function(){
+
+		calendar.attr( "width", content.width() );
+	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
