@@ -118,6 +118,10 @@ hr{
 	width: 15%;  
 }
 
+img{
+	@extend %clearfix;
+}
+
 .animate{
 	-webkit-transition: -webkit-transform 0.5s ease, color 0.5s ease, background-color 0.5s ease, width 0.5s ease;
 	-moz-transition: -moz-transform 0.5s ease, color 0.5s ease, background-color 0.5s ease, width 0.5s ease;
