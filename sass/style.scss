@@ -93,6 +93,11 @@ h2{
 	margin-bottom: 20px;
 }
 
+h3{
+	font-size: 20px; 
+	margin-bottom: 20px;
+}
+
 p{
 	font-weight: normal; 
 }
@@ -151,6 +156,10 @@ img{
 		a{
 			display: block;
 			width: 100%;
+			
+			&:hover{
+				border-bottom: 2px solid white;
+			}
 		}
 	}
 }
@@ -201,28 +210,10 @@ img{
 	padding: 0;
 }
 
-// Panel container
-.node-36{
-	padding: 0 !important;
-}
-
-// world relief
-.node-32{
-	background: url(../images/worldrelief.jpg) no-repeat center center; 
-	background-size: cover;
-	color: $white;
-}
-
 .logo{
 	background: url(../images/logo.svg) no-repeat center center; 
 	background-size: cover;
 	margin: 0 auto;
-}
-
-// vulnerable
-.node-33{
-	background-color: $white;
-	color: $header;
 }
 
 // help
@@ -239,62 +230,6 @@ img{
 
 .node-help-content{
 	line-height: 1;
-}
-
-// stand
-.node-37{
-	background-color: $white;
-	color: $header;
-}
-
-// join
-.node-38{
-	background-color: $dark-gray;
-	color: $white;
-}
-
-.join-image{
-	background: $black url(../images/join.jpg) no-repeat center center; 
-	background-size: cover;
-}
-
-// pray
-.node-39{
-	background-color: $medium-blue;
-	color: $white;
-}
-
-.pray-image{
-	background: $black url(../images/pray.jpg) no-repeat center center; 
-	background-size: cover;
-}
-
-// give
-.node-40{
-	background-color: $yellow;
-	color: $white;
-}
-
-.give-image{
-	background: $black url(../images/give.jpg) no-repeat center center; 
-	background-size: cover;
-}
-
-// advocate
-.node-41{
-	background-color: $medium-green;
-	color: $white;
-}
-
-.advocate-image{
-	background: $black url(../images/advocate.jpg) no-repeat center center; 
-	background-size: cover;
-}
-
-// signup
-.node-42{
-	background-color: $white;
-	color: $header;
 }
 
 #sub-form{
@@ -384,6 +319,7 @@ img{
 
 .button{
 	display: block;
+	width: 100%; 
 	padding: 13px 0;
 	border-radius: 36px;
 	margin: 20px auto 0 auto;
@@ -450,6 +386,10 @@ img{
 	&:hover, &:active{
 		background-color: $light-green; 
 	}
+}
+
+#panels-dnd-main{
+	margin: 50px 0; 
 }
 
 //layouts:
@@ -583,26 +523,6 @@ img{
 	padding: 50px 20px;
 }
 
-// join, pray, give, advocate
-.node-38, .node-39, .node-40, .node-41{
-	padding: 0;
-	height: auto;
-}
-
-.half-image-left, .half-image-right{
-	height: 175px;
-	width: 100%;
-	margin: 0;
-	float: none; 
-}
-
-.half-content-left, .half-content-right{
-	width: 100%;
-	margin: 0;
-	padding: 30px 20px;
-	float: none; 
-}
-
 .footer{
 	padding: 50px 15px;
 }
@@ -624,7 +544,7 @@ img{
 }
 
 .button{
-	width: 180px;
+	max-width: 180px;
 }
 
 //desktop
@@ -773,40 +693,6 @@ img{
 		padding: 290px 80px 80px 80px;
 	}
 
-	// join, pray, give, advocate
-	.node-38, .node-39, .node-40, .node-41{
-		padding: 0;
-		height: 380px;
-	}
-
-	.half-image-left{
-		height: 100%;
-		width: 50%;
-		margin: 0;
-		float: left; 
-	}
-
-	.half-image-right{
-		height: 100%;
-		width: 50%;
-		margin: 0;
-		float: right; 
-	}
-
-	.half-content-left{
-		width: 50%;
-		margin: 0;
-		padding: 6% 6% 0 6%;
-		float: left; 
-	}
-
-	.half-content-right{
-		width: 50%;
-		margin: 0;
-		padding: 6% 6% 0 6%;
-		float: right;
-	}
-
 	.footer{
 		padding: 80px 80px;
 	}
@@ -828,6 +714,6 @@ img{
 	}
 	
 	.button{
-		width: 220px;
+		max-width: 220px;
 	}
 }

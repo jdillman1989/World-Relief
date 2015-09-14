@@ -1,5 +1,14 @@
 jQuery(document).ready(function() {
 
+	// Override panel styles
+
+	var contentContainer = jQuery(".content");
+	var panelContainer = contentContainer.children();
+	var panelContainerClasses = panelContainer.attr('class');
+	var panelContainerClassNumber = panelContainerClasses.match(/\d+/g);
+
+	jQuery("<style type='text/css'> .panels-flexible-"+panelContainerClassNumber+" .panels-flexible-region-inside{ padding-right: 0; padding-left: 0; } .panels-flexible-"+panelContainerClassNumber+" .panels-flexible-row{ padding: 0 0 0 0; } @media (max-width: 676px) { .panels-flexible-"+panelContainerClassNumber+" .panels-flexible-region{ float: none; width: 100%; } } </style>").appendTo("head");
+
 	// Mobile menu
 
 	var mobileMenu = jQuery(".mobile-menu");
@@ -38,8 +47,6 @@ jQuery(document).ready(function() {
 				"-webkit-transform":"translate(0px, 0px)"
 			});
 
-			console.log( ".nav x-coord: 0");
-
 			mobileIconSecond.css({"width":"48px"});
 
 			mobileIconThird.css({"width":"48px"});
@@ -53,8 +60,6 @@ jQuery(document).ready(function() {
 				"transform":"translate(" + navContainer.outerWidth() + "px, 0px)",
 				"-webkit-transform":"translate(" + navContainer.outerWidth() + "px, 0px)"
 			});
-
-			console.log( ".nav x-coord: " + navContainer.outerWidth() );
 
 			mobileIconSecond.css({"width":"38px"});
 
@@ -105,6 +110,22 @@ jQuery(document).ready(function() {
 
 		iframe.attr( "width", content.width() );
 	});
+
+	// responsive height columns
+
+	var panelRow = jQuery(".grid");
+	var topPadding = parseInt(content.css('padding-top'));
+	var verticalPadding = topPadding * 2;
+
+	if (jQuery(window).width() > 676) {
+
+		panelRow.each(function() {
+
+			var panelRowHeight = jQuery( this ).height();
+
+			jQuery( this ).find( ".wr-node" ).height( panelRowHeight - verticalPadding );
+		});
+	}
 });
 
 
