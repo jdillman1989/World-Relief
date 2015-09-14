@@ -103,7 +103,7 @@ jQuery(document).ready(function() {
 
 	jQuery(window).resize(function(){
 
-		calendar.attr( "width", content.width() );
+		iframe.attr( "width", content.width() );
 	});
 });
 
