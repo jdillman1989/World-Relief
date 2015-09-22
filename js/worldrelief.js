@@ -9,6 +9,16 @@ jQuery(document).ready(function() {
 
 	jQuery("<style type='text/css'> .panels-flexible-"+panelContainerClassNumber+" .panels-flexible-region-inside{ padding-right: 0; padding-left: 0; } .panels-flexible-"+panelContainerClassNumber+" .panels-flexible-row{ padding: 0 0 0 0; } @media (max-width: 676px) { .panels-flexible-"+panelContainerClassNumber+" .panels-flexible-region{ float: none; width: 100%; } } </style>").appendTo("head");
 
+	jQuery("div").each(function() {
+
+		var thisWidth = 100 * parseFloat(jQuery(this).css('width')) / parseFloat(jQuery(this).parent().css('width'));
+
+		if ( thisWidth == 99 ) {
+
+			jQuery(this).width('100%');
+		};
+	});
+
 	// Mobile menu
 
 	var mobileMenu = jQuery(".mobile-menu");

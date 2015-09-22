@@ -1,4 +1,4 @@
-name = World-Relief
+name = worldrelief
 description = Drupal theme for World Relief
 package = Core
 version = VERSION
@@ -12,3 +12,4 @@ regions[content] = Content
 regions[footer] = Footer
 
 features[] = main_menu
+features[] = secondary_menu

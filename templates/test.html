@@ -1,3 +1,15 @@
+In template.php of your theme:
+
+function YOURTHEME_process_page(&$variables) {
+    $menu_tree = menu_tree_all_data('main-menu');
+    $variables['main_menu'] = menu_tree_output($menu_tree);
+}
+In your template file (page.tpl.php)
+
+print render($main_menu);
+
+
+
 	<section class="block">
 
 		<div class="wr-node node-worldrelief">

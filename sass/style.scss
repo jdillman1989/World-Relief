@@ -158,7 +158,7 @@ img{
 			width: 100%;
 			
 			&:hover{
-				border-bottom: 2px solid white;
+				text-decoration: underline;
 			}
 		}
 	}
@@ -574,8 +574,8 @@ img{
 	.main-nav{
 		background-color: transparent;
 		padding: 0; 
-		width: 80%;
-		float: right;
+		width: 90%;
+		margin: 0 auto;
 		
 		li{
 			width: 14%;

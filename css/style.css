@@ -188,7 +188,7 @@ hr {
 }
 /* line 160, ../sass/style.scss */
 .main-nav li a:hover {
-  border-bottom: 2px solid white;
+  text-decoration: underline;
 }
 
 /* line 167, ../sass/style.scss */
@@ -630,8 +630,8 @@ hr {
   .main-nav {
     background-color: transparent;
     padding: 0;
-    width: 80%;
-    float: right;
+    width: 90%;
+    margin: 0 auto;
   }
   /* line 580, ../sass/style.scss */
   .main-nav li {

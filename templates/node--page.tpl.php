@@ -56,14 +56,6 @@
 
 	?>
 
-	<?php if ($node->nid==32): ?>
-		<div class="logo"></div>
-	<?php endif; ?>
-
 	<?php print render($content); ?>
 	</div>
 </section>
-
-
-
-

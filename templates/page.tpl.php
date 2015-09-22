@@ -2,11 +2,15 @@
 	
 	<header class="nav animate position">
 
-		<?php 
-			print theme(
-				'links__system_main_menu', 
-				array('links' => $main_menu, 'attributes' => array('class' => 'main-nav'))
-			); 
+		<?php
+			// print theme(
+			// 	'links__system_main_menu', 
+			// 	array('links' => $main_menu, 'attributes' => array('class' => 'main-nav'))
+			// ); 
+
+			$pid = variable_get('menu_main_links_source', 'main-menu');
+			$tree = drupal_render(menu_tree($pid));
+			print $tree;
 		?>
 	</header>
 
