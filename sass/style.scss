@@ -164,6 +164,24 @@ img{
 				text-decoration: underline;
 			}
 		}
+
+		ul{
+			width: 100%;
+			
+			li{
+				
+				a{
+					padding: 9px 5px;
+					font-weight: normal;
+					line-height: 1.2;
+					color: $text;
+					
+					&:hover{
+						text-decoration: underline;
+					}
+				} 
+			}
+		}
 	}
 }
 
@@ -418,15 +436,43 @@ img{
 	display: block;
 	background-color: $light-gray;
 	padding: 20px; 
-	width: 200px;
+	width: 95%;
 	
 	li{
+		@extend %clearfix;
 		width: 100%;
 		
 		a{
 			width: 100%;
-			padding: 15px;
+			padding: 7px;
 			color: $header;
+			border-bottom: 2px solid $white; 
+			text-align: left;
+		}
+
+		ul{
+			@extend %clearfix;
+			width: 100%;
+			
+			li{
+				width: 49.5%; 
+				float: left;
+				
+				a{
+					font-weight: normal;
+					line-height: 1.2;
+					color: $text;
+					border-bottom: none; 
+					
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+
+				ul{
+					display: none;
+				} 
+			}
 		}
 	}
 }
@@ -588,23 +634,25 @@ img{
 			a{
 				padding: 8px 0;
 				color: $white;
+				text-align: center;
+				border-bottom: none;
 			}
 
 			ul{
-				width: 100%;
 				display: none;
 				position: absolute;
 				left: 0;
 				top: 100%;
 				background-color: $white; 
+				width: 120%; 
 				
 				li{
-					float: none;
 					width: 100%;
+					float: none;
 					
 					a{
-						padding: 5px 5px;
-						color: $text;
+						text-align: center;
+						border-bottom: none;
 						
 						&:hover{
 							text-decoration: underline;
