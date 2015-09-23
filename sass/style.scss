@@ -149,6 +149,9 @@ img{
 }
 
 .main-nav{ 
+	text-align: center !important;
+	list-style-image: none !important;
+	list-style-type: none !important;
 	
 	li{
 		list-style: none;
@@ -580,10 +583,38 @@ img{
 		li{
 			width: 14%;
 			float: left;
+			position: relative;
 			
 			a{
 				padding: 8px 0;
 				color: $white;
+			}
+
+			ul{
+				width: 100%;
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 100%;
+				background-color: $white; 
+				
+				li{
+					float: none;
+					width: 100%;
+					
+					a{
+						padding: 5px 5px;
+						color: $text;
+						
+						&:hover{
+							text-decoration: underline;
+						}
+					} 
+				}
+			}
+
+			&:hover > ul{
+				display: block;
 			}
 		}
 	}

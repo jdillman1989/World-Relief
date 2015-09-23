@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
 
-	// Override panel styles
+	// Override styles
 
 	var contentContainer = jQuery(".content");
 	var panelContainer = contentContainer.children();
@@ -19,11 +19,25 @@ jQuery(document).ready(function() {
 		};
 	});
 
+	jQuery("ul").each(function() {
+
+		jQuery(this).removeClass("menu");
+	});
+
+	jQuery("li").each(function() {
+
+		jQuery(this).removeClass("leaf");
+		jQuery(this).removeClass("expanded");
+	});
+
 	// Mobile menu
+
+	var navContainer = jQuery(".nav");
+
+	navContainer.children().addClass("main-nav");
 
 	var mobileMenu = jQuery(".mobile-menu");
 	var mainNav = jQuery(".main-nav");
-	var navContainer = jQuery(".nav");
 	var mobileIconSecond = jQuery(".mobile-icon-second");
 	var mobileIconThird = jQuery(".mobile-icon-third");
 
