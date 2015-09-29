@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
 	var panelContainer = contentContainer.children();
 	var panelContainerClasses = panelContainer.attr('class');
 
-	if (jQuery("#panels-edit-display-form").length) {
+	if (jQuery("#panels-edit-display-form").length || jQuery("#user-login").length) {
 
 	}
 
@@ -36,6 +36,7 @@ jQuery(document).ready(function() {
 
 		jQuery(this).removeClass("leaf");
 		jQuery(this).removeClass("expanded");
+		jQuery(this).removeClass("collapsed");
 	});
 
 	// Mobile menu
